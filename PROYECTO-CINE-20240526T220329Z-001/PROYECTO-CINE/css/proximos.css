@@ -1,0 +1,415 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    /* border: 1px solid red; */
+}
+#headerr {
+    height: auto;
+    background-color: cadetblue;
+    /* padding-top: 7%; */
+}
+
+.logo{
+    font-size: 1.8rem;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 3%;
+}
+
+#menuID {
+    padding: 0%;
+    margin: 0%;
+    list-style-type: none;
+}
+
+#menuID a {
+    text-decoration: none;
+    color: antiquewhite;
+    text-decoration: none;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.item {
+    padding: 10px;
+}
+
+.item a:hover::after {
+    color: #ccc;
+}
+
+/* a {
+    color: antiquewhite;
+    text-decoration: none;
+    margin-left: 7%;
+    font-size: 1.2em;
+    text-align: center;
+} */
+
+body, main{
+    /* background-color: rgb(216, 205, 192); */
+    /* background-color: #2A2D38; */
+    background-color: cadetblue;
+    height: auto;
+}
+
+#sectionCarousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+#divH1 h1 {
+    padding: 20px 0px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-family: sans-serif Black;
+    font-weight: bold;
+    font-size: 40px; 
+    color: #d4c3c3;
+    text-shadow: -1.8px 0 #1d1c1c, 0 1.8px #1d1c1c, 1.8px 0 #1d1c1c, 0 -1.8px #1d1c1c;
+}
+
+#divCarousel {
+    border: 1px solid #595a5e;
+    height: auto;
+    width: 400px;
+}
+
+
+footer{
+    height: 8vh;
+    /* margin-top: vh; */
+    background-color: cadetblue;
+    padding-top: 0%;
+}
+footer div {
+    display: block;
+    padding: 0.5vh;
+    text-align: center;
+    justify-content: center;
+}
+footer p{
+    text-align: center;
+    color: rgb(59, 57, 57);
+    font-size: 1em;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+/* ESTO PARA COLOR FONDO DE LA CAJA*/
+.box-conteiner-1{
+    background-color: #393b44;
+}
+
+/* MOBILE MENU */
+@media all and (max-width: 730px) {
+    header, footer{
+        height: auto;
+    }
+
+    footer div {
+        display: block;
+        justify-content: center;
+        text-align: center;
+        padding: 4px;
+    }
+    
+    footer div div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 30px;
+        width: auto;
+        
+    }
+    
+    footer div div img {
+        display: block;
+        padding: 2px;
+        height: 25px;
+        width: auto;
+    }
+
+    #menuID {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:center;
+        align-items:center;
+    }
+    
+    .item {
+        padding: 0px;
+    }
+    
+    #menuID a {
+        margin-left: 0px;
+    }
+    
+    #menuID li:first-child {
+        border-bottom: 1px solid #ffffff; /* Línea debajo de cada elemento */
+        padding: 0.5vh; /* Añadir algo de espacio para mejor visualización */
+    }
+    
+    #menuID li a {
+        display: block;
+        padding: 15px 5px;
+    }
+    
+    .toggle {
+        order: 1;
+        font-size: 20px;
+    }
+    
+    .item {
+        order: 1;
+        width: 100%;
+        text-align: center;
+        display:block;
+    }
+
+
+    .box-conteiner-1{
+        width: auto;
+        padding-top: 2%;
+        display: grid;
+        grid-template-columns:
+        repeat(auto-fit),minmax(180px,1fr);
+        outline: 6px solid transparent;
+        margin-left: 0%;
+    }
+
+    .content{
+        padding: 1vh 3vh;
+    }
+
+    .parte_2 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    main {
+        background-color: rgb(133, 193, 196);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #sectionTOTAL {
+        background-color: #25262c;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@media all and (min-width: 730px) {
+    header, footer{
+        height: auto;
+    }
+
+
+    footer div {
+        display: block;
+        justify-content: center;
+        text-align: center;
+        padding: 4px;
+    }
+
+    footer div div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 30px;
+        width: auto;
+        
+    }
+
+    footer div div img {
+        display: block;
+        padding: 2px;
+        height: 25px;
+        width: auto;
+    }
+
+    #menuID {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:center;
+        align-items:center;
+    }
+
+    .item {
+        padding: 0px;
+    }
+
+    #menuID a {
+        margin-left: 0px;
+    }
+
+    #menuID li:first-child {
+        border-bottom: 1px solid #ffffff; /* Línea debajo de cada elemento */
+        padding: 0.5vh; /* Añadir algo de espacio para mejor visualización */
+    }
+
+    #menuID li a {
+        display: block;
+        padding: 15px 5px;
+    }
+
+    .toggle {
+        order: 1;
+        font-size: 20px;
+    }
+
+    .item {
+        order: 1;
+        width: 100%;
+        text-align: center;
+        display:block;
+    }
+
+    /* --- ACOMODO GRILLA PARA EL MOBILE --- */
+    #movies-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .box-conteiner-1{
+        width: auto;
+        padding-top: 2%;
+        display: grid;
+        grid-template-columns:
+        repeat(auto-fit),minmax(180px,1fr);
+        outline: 6px solid transparent;
+        margin-left: 0%;
+    }
+
+    .content{
+        padding: 20px 20px;
+    }
+
+    .parte_2 {
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+
+    main {
+        background-color: rgb(133, 193, 196);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #sectionTOTAL {
+        background-color: #25262c;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* DESKTOP MENU */
+@media all and (min-width: 960px) {    
+    #menuID {
+        height: auto;
+        align-items: center;     
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content:center;
+        background: none;
+        
+    }
+
+    #menuID li:first-child {
+        border-bottom: none;
+        padding: 0.5vh;
+    }
+
+    .item {
+        position: relative;
+        display: block; 
+        width: auto;
+        padding: 0vh 5vh;
+    }
+
+    #movies-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .box-conteiner-1{
+        width: auto;
+        padding-top: 2%;
+        display: grid;
+        grid-template-columns:
+        repeat(auto-fit),minmax(180px,1fr);
+        outline: 6px solid transparent;
+        margin-left: 0%;
+    }
+
+    main {
+        background-color: rgb(133, 193, 196);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #sectionTOTAL {
+        background-color: #25262c;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content{
+        padding: 2vh 2vh;
+    }
+
+    .parte_2 {
+        grid-column-start: 4;
+        grid-column-end: 5;
+    }
+
+    footer {
+        height: auto;
+    }
+
+    footer div {
+        display: block;
+        justify-content: center;
+        text-align: center;
+        padding: 2px;
+    }
+
+    footer div p {
+        /* padding: 0px; */
+        margin-bottom: 3px;
+    }
+
+    footer div div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    footer div div img {
+        display: block;
+        padding: 2px;
+        height: 25px;
+        width: auto;
+    }
+}

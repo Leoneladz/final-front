@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/recomendadas.css">
+    <link rel="icon" href="../img/images-_1_.ico">
+    <script src="../js/recomendacion.js"></script>
+    <title>Recomendadas</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#"class="logo" >CineScape</a>
+            <a href="../index.html">Inicio</a>
+            <a href="../templates/proximos.html">Proximos estrenos</a>
+
+            <a href="../templates/precios.html">Precios</a>
+            <a href="../templates/contacto.html">Contacto</a>
+        </nav>
+    </header> 
+    <h1>Bienvenidos al cine!!</h1>
+    <h3>Queremos hacer de tu visita, una experiencia más placentera. Para esto, ingresá tu edad y selecciona el género que más te guste, y te recomendamos tu película ideal.</h3>
+    <p>Edad: <input type="text" id="edad"></p>
+    <button onclick="recomendar('drama')">Drama</button>
+    <button onclick="recomendar('comedia')">Comedia</button>
+    <button onclick="recomendar('terror')">Terror</button>
+    <button onclick="recomendar('infantil')">Infantil</button>
+    <button onclick="recomendar('cienciaFiccion')">Ciencia ficción</button>
+    <button onclick="recomendar('accion')">Acción</button>
+    <button onclick="recomendar('musical')">Musical</button>
+    <button onclick="recomendar('crimen')">Crimen</button>
+    <h2>Nuestra recomendación:</h2>
+    <h5 id="recomendacion"></h5>
+
+
+    
+
+    <footer>
+    
+        <h4>Derechos reservados @2024</h4>
+        <img src="../img/instagram (1).png" alt="Instagram" style="width: 2vw; margin-left: 47vw;" >
+        <img src="../img/facebook.png" alt="Facebook" style="width: 2vw; margin-right: 47vw;">
+      </footer>  
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/contacto.css">
+    <link rel="icon" href="../img/images-_1_.ico">
+    <title>Contacto</title>
+</head>
+
+
+<body>
+    <header id="headerr">
+        <nav>
+            <ul id="menuID">
+                <li class="logo"><a href="#">CineScape</a></li>
+                <li class="item"><a href="../index.html">Inicio</a></li>
+                <li class="item"><a href="../templates/proximos.html">Próximos estrenos</a></li>
+                <li class="item"><a href="../templates/recomendadas.html">Recomendadas</a></li>
+                <li class="item"><a href="../templates/precios.html">Precios</a></li>
+            </ul>
+        </nav>
+      </header>
+<main>
+    <h2>Formulario de contacto</h2>
+    
+    
+    <section class="for">
+      <div class="formu-lario">
+       <form action="https://formspree.io/f/xyyqlovj" method="post" id="formulario" onsubmit="return validarFormulario()">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido"><br>
+
+        <label for="Telefono">Telefono:</label>
+        <input type="number" id="telefono" name="telefono"><br>
+
+        <label for="inputSection" class="form-label">Sección:</label>
+                            <select id="inputSection" class="form-select">
+                                <option selected>Seleccione un motivo</option>
+                                <option>Devolución de compra</option>
+                                <option>Proceso de compra</option>
+                                <option>Cartelera y precios</option>
+                                <option>Reclamos</option>
+                            </select>
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+         <br>
+        <input type="submit" value="Enviar">
+       </form>
+      </div>
+    </section>
+      
+    
+    <section class="for">
+      <h2>Visitanos!!</h2>
+     <iframe class="img" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104686.10569991368!2d-58.03574510755129!3d-34.92048027083835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e62b1f0085a1%3A0xbcfc44f0547312e3!2sLa%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1697515733717!5m2!1ses-419!2sar">
+     </iframe> 
+  </main>
+    
+
+  <footer>
+    <div>
+        <p>Derechos reservados @2024</p>
+        <div>
+            <img src="../img/instagram (1).png" alt="Instagram">
+            <img src="../img/facebook.png" alt="Facebook">
+        </div>
+    </div>
+  </footer> 
+
+
+</body>
+
+</html>

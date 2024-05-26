@@ -1,0 +1,309 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+.anima2{
+    background-image: url('../img/animacion/ghost-buster.jpg');
+    background-repeat: no-repeat;
+    background-size:contain;
+    height: 70vh;
+    width: 80vw;
+    position: relative;
+    margin-top: 10vh; 
+    margin-left: 20vw; 
+    margin-bottom: 1vh; 
+
+    animation-name: cambiar;
+    animation-duration: 15s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes cambiar {
+    0%{background-image: url('../img/animacion/kung.webp'); left: 0vw;top: 0vh;}
+    25%{background-image: url('../img/animacion/recuerdoss.jpg');left: 0vw;top: 0vh;}
+    50%{background-image: url('../img/animacion/atrapadoss.jpg');left: 0vw;top: 0vh;}
+    100%{background-image: url('../img/animacion/kong.jpeg');left: 0vw;top: 0vh;}
+   
+}
+
+/* @media only screen and (max-width: 575px) {
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
+    
+
+    .anima2{
+        background-image: url('../img/animacion/ghost-buster.jpg');
+        background-repeat: no-repeat;
+        background-size:contain;
+        height: 32vh;
+        width: 90vw;
+        position: relative;
+        margin-top: 5vh; 
+        margin-left: 9vw; 
+        margin-bottom: 1vh; 
+    
+        animation-name: cambiar;
+        animation-duration: 15s;
+        animation-delay: 1s;
+        animation-iteration-count: infinite;
+    
+    }
+    
+    @keyframes cambiar {
+        0%{background-image: url('../img/animacion/kung.webp'); left: 0vw;top: 0vh;}
+        25%{background-image: url('../img/animacion/recuerdoss.jpg');left: 0vw;top: 0vh;}
+        50%{background-image: url('../img/animacion/atrapadoss.jpg');left: 0vw;top: 0vh;}
+        100%{background-image: url('../img/animacion/kong.jpeg');left: 0vw;top: 0vh;}
+       
+    }
+
+
+} */
+
+@media only screen and (max-width: 575px) {
+ *{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+.anima2{
+    background-image: url('../img/animacion/ghost-buster.jpg');
+    background-repeat: no-repeat;
+    background-size:contain;
+    height: 40vh;
+    width: 80vw;
+    position: relative;
+    margin-top: 5vh; 
+    margin-left: 8vw; 
+    margin-bottom: 1vh; 
+
+    animation-name: cambiar;
+    animation-duration: 15s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes cambiar {
+    0%{background-image: url('../img/animacion/kung.webp'); left: 0vw;top: 0vh;}
+    25%{background-image: url('../img/animacion/recuerdoss.jpg');left: 0vw;top: 0vh;}
+    50%{background-image: url('../img/animacion/atrapadoss.jpg');left: 0vw;top: 0vh;}
+    100%{background-image: url('../img/animacion/kong.jpeg');left: 0vw;top: 0vh;}
+   
+}
+
+
+} 
+
+@media only screen and (min-width: 576px) and (max-width: 767px) { 
+
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
+    
+
+    .anima2{
+        background-image: url('../img/animacion/ghost-buster.jpg');
+        background-repeat: no-repeat;
+        background-size:contain;
+        height: 50vh;
+        width: 80vw;
+        position: relative;
+        margin-top: 10vh; 
+        margin-left: 10vw; 
+        margin-bottom: 5vh; 
+    
+        animation-name: cambiar;
+        animation-duration: 15s;
+        animation-delay: 1s;
+        animation-iteration-count: infinite;
+    
+    }
+    
+    @keyframes cambiar {
+        0%{background-image: url('../img/animacion/kung.webp'); left: 0vw;top: 0vh;}
+        25%{background-image: url('../img/animacion/recuerdoss.jpg');left: 0vw;top: 0vh;}
+        50%{background-image: url('../img/animacion/atrapadoss.jpg');left: 0vw;top: 0vh;}
+        100%{background-image: url('../img/animacion/kong.jpeg');left: 0vw;top: 0vh;}
+       
+    }
+
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
+    
+
+    .anima2{
+        background-image: url('../img/animacion/ghost-buster.jpg');
+        background-repeat: no-repeat;
+        background-size:contain;
+        height: 60vh;
+        width: 80vw;
+        position: relative;
+        margin-top: 10vh; 
+        margin-left: 10vw; 
+        margin-bottom: 5vh; 
+    
+        animation-name: cambiar;
+        animation-duration: 15s;
+        animation-delay: 1s;
+        animation-iteration-count: infinite;
+    
+    }
+    
+    @keyframes cambiar {
+        0%{background-image: url('../img/animacion/kung.webp'); left: 0vw;top: 0vh;}
+        25%{background-image: url('../img/animacion/recuerdoss.jpg');left: 0vw;top: 0vh;}
+        50%{background-image: url('../img/animacion/atrapadoss.jpg');left: 0vw;top: 0vh;}
+        100%{background-image: url('../img/animacion/kong.jpeg');left: 0vw;top: 0vh;}
+       
+    }
+
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
+    
+
+    .anima2{
+        background-image: url('../img/animacion/ghost-buster.jpg');
+        background-repeat: no-repeat;
+        background-size:contain;
+        height: 70vh;
+        width: 80vw;
+        position: relative;
+        margin-top: 10vh; 
+        margin-left: 13vw; 
+        margin-bottom: 5vh; 
+    
+        animation-name: cambiar;
+        animation-duration: 15s;
+        animation-delay: 1s;
+        animation-iteration-count: infinite;
+    
+    }
+    
+    @keyframes cambiar {
+        0%{background-image: url('../img/animacion/kung.webp'); left: 0vw;top: 0vh;}
+        25%{background-image: url('../img/animacion/recuerdoss.jpg');left: 0vw;top: 0vh;}
+        50%{background-image: url('../img/animacion/atrapadoss.jpg');left: 0vw;top: 0vh;}
+        100%{background-image: url('../img/animacion/kong.jpeg');left: 0vw;top: 0vh;}
+       
+    }
+
+
+}
+
+
+
+
+
+ /* footer{
+    margin-top: 10vh;
+    height: 8vh;
+    background-color: cadetblue;
+    padding-top: 0%;
+}
+footer p{
+    text-align: center;
+    color: black;
+    font-size: 1em;
+    margin-left: 5%
+   
+}  */
+
+/* @media screen and (max-width: 600px) { */
+    /* @media only screen and (min-width: 360px) and (max-width: 499px) {
+
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
+    
+    
+    .anima2{
+
+        background-image: url('../img/animacion/ghost-buster.jpg');
+        background-repeat: no-repeat;
+        background-size:contain;
+        height: 50vh;
+        width: 80vw;
+        position: relative;
+        margin-top: 10vh; 
+        margin-left: 10vw; 
+        margin-bottom: 1%; 
+    
+        animation-name: cambiar;
+        animation-duration: 15s;
+        animation-delay: 1s;
+        animation-iteration-count: infinite;
+    
+    }
+    
+    @keyframes cambiar {
+        0%{background-image: url('../img/animacion/kung.webp'); left: 0vw;top: 0vh;}
+        25%{background-image: url('../img/animacion/recuerdoss.jpg');left: 0vw;top: 0vh;}
+        50%{background-image: url('../img/animacion/atrapadoss.jpg');left: 0vw;top: 0vh;}
+        100%{background-image: url('../img/animacion/kong.jpeg');left: 0vw;top: 0vh;}
+       
+    }
+
+}
+
+@media (min-width: 500px) and (max-width: 700px) {
+    
+    
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
+    
+    
+    .anima2{
+
+        background-image: url('../img/animacion/ghost-buster.jpg');
+        background-repeat: no-repeat;
+        background-size:contain;
+        height: 50vh;
+        width: 70vw;
+        position: relative;
+        margin-top: 10vh; 
+        margin-left: 16vw; 
+        margin-bottom: 10%; 
+    
+        animation-name: cambiar;
+        animation-duration: 15s;
+        animation-delay: 1s;
+        animation-iteration-count: infinite;
+    
+    }
+    
+    @keyframes cambiar {
+        0%{background-image: url('../img/animacion/kung.webp'); left: 0vw;top: 0vh;}
+        25%{background-image: url('../img/animacion/recuerdoss.jpg');left: 0vw;top: 0vh;}
+        50%{background-image: url('../img/animacion/atrapadoss.jpg');left: 0vw;top: 0vh;}
+        100%{background-image: url('../img/animacion/kong.jpeg');left: 0vw;top: 0vh;}
+       
+    }
+
+}
+     */

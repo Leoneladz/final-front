@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/proximos-estrenos-CSS/detalle-peliculas.css">
+    <link rel="icon" href="../../img/images-_1_.ico">
+    <title>Detalle Película</title>
+
+    <script>
+        function getParametro(name) {
+            const params = new URLSearchParams(document.location.search);
+            return params.get(name);
+        }
+
+        function cargarDetalle() {
+            const idPelicula = getParametro('pelicula');
+
+            const detalles = {
+                1: { imagen: '../../img/proximos-extrenos/bonnie_bears(1-28).jpg', titulo: 'Bonnie Bears', descripcion: 'Es la novena película de la serie Boonie Bears y está dirigida por Lin Yongchang y Shao Heqi. En la película, los jóvenes Briar y Bramble pierden a su madre en un incendio forestal, y muchos años después, Vick los lleva a un instituto de investigación de robots, donde inesperadamente reciben noticias de su madre.', video: 'https://www.youtube.com/embed/o92rVUkbaFg?si=v_GQINZ5jBA7fsgS' },
+
+                2: { imagen: '../../img/proximos-extrenos/cenicienta(2).jpeg', titulo: 'Cenicienta', descripcion: 'Una versión psicópata de Cenicienta en un film que no escatima en litros de sangre y que da un vuelco a la historia clásica para presentar una Cenicienta más parecida a Carrie que a latípica princesa de cuentas de hadas.', video: 'https://www.youtube.com/embed/ztQXEm4eNnQ?si=vqiHSD0IQ-KW-lm9' },
+
+                3: { imagen: '../../img/proximos-extrenos/contraTodos(3).jpeg', titulo: 'Contra Todos', descripcion: 'Entre impresionantes escenas de lucha, artes marciales, suspenso cuadro a cuadro, imágenes vívidas y locaciones exuberantes, se narra la historia de un niño huérfano, víctima de un régimen totalitario, que es rescatado por un misterioso chamán quien lo entrena para convertirse en una máquina de venganza.', video: 'https://www.youtube.com/embed/dArrVjqFiVA?si=_h4-C5jyOlPTrJbz' },
+
+                4: { imagen: '../../img/proximos-extrenos/desafiantes(4).jpg', titulo: 'Desafiantes', descripcion: 'Art y Patrick están comenzando una exitosa carrera en el tenis. No solo son una promesa en el circuito juvenil, que además juegan juntos en dobles, sino que los une ese tipo de amistad entrañable de los que se criaron juntos. Y así hacen todo: juegan juntos, viajan juntos, duermen juntos y hasta se enamoran juntos.', video: 'https://www.youtube.com/embed/8D6VxT7X2vo?si=eXJTHjBykmeh3pDT' },
+
+                5: { imagen: '../../img/proximos-extrenos/elGranCambio(5).jpg', titulo: 'El Gran Cambio', descripcion: 'Tras un tenso encuentro con un misterioso desconocido con poderes de otro mundo, un hombre es desterrado a una Tierra paralela y tiránica donde lucha por volver con la mujer que ama.', video: 'https://www.youtube.com/embed/_a_0aqNT_sE' },
+
+                6: { imagen: '../../img/proximos-extrenos/furiosa(6).jpeg', titulo: 'Furiosa', descripcion: 'Mientras el mundo caía, la joven Furiosa es arrebatada del Lugar Verde de Muchas Madres y cae en manos de una gran Horda de Motociclistas liderada por el Señor de la Guerra Dementus. Navegando por Wasteland, se encuentran con la Ciudadela presidida por The Immortan Joe.', video: 'https://www.youtube.com/embed/52dKmsFt6Ek' },
+               
+                7: { imagen: '../../img/proximos-extrenos/garfield(7).jpeg', titulo: 'Garfield', descripcion: 'Dirigida por Mark Dindal y protagonizada por Chris Pratt como la voz de Garfield, la película cuenta la historia del famoso gato naranja y su fiel compañero canino, Odie, quienes se ven envueltos en una inesperada situación cuando se reencuentran con el padre de Garfield, Vic, un gato callejero desaliñado.', video: 'https://www.youtube.com/embed/0fgJbwuE6wE' },
+
+                8: { imagen: '../../img/proximos-extrenos/garra(8).jpg', titulo: 'Garra de Hierro', descripcion: 'La historia real de los inseparables hermanos Von Erich, que hicieron historia en el mundo intensamente competitivo de la lucha libre profesional a principios de la década de 1980.', video: 'https://www.youtube.com/embed/JEMiiYpNAqk' },
+
+                9: { imagen: '../../img/proximos-extrenos/hachicko2(9).jpeg', titulo: 'Hachiko 2: Siempre a tu lado', descripcion: 'Hachiko (Batong) es un lindo perro pastor chino. Conoce a su dueño Chen Jingxiu entre la gran multitud y se convierte en miembro de la familia Chen. Con el paso del tiempo, la casa que alguna vez fue hermosa ya no está allí, pero Batong espera y espera, sabiendo que su destino está estrechamente ligado a su familia.', video: 'https://www.youtube.com/embed/WoY2Mq974Vw' },
+
+                10: { imagen: '../../img/proximos-extrenos/haikyu(10).jpg', titulo: 'Haikyu', descripcion: 'La película cubre la primera mitad de la primera temporada de la adaptación al anime del manga. Shōyō Hinata , después de una abrumadora derrota de Kitagawa Daiichi Junior High y su armador Tobio Kageyama en su primer partido oficial de voleibol, asiste a Karasuno High , con la intención de finalmente tener un equipo de voleibol adecuado y vengarse de Kageyama. Sin embargo, al llegar a Karasuno, Hinata descubre que Kageyama también se ha ido a Karasuno. Inicialmente en desacuerdo entre sí, los dos forman una combinación extraña y luchan junto con los otros miembros del club de voleibol. Karasuno se reúne con una antigua escuela rival, Nekoma High , en un partido de práctica y reaviva su rivalidad escolar.', video: 'https://www.youtube.com/embed/JOGp2c7-cKc' },
+
+                11: { imagen: '../../img/proximos-extrenos/herencia(11).jpg', titulo: 'Herencia Siniestra', descripcion: 'Un hombre cuya búsqueda de su familia biológica le lleva a él y a su novia Ryley a una magnífica villa en lo alto de las montañas del norte de Portugal, descubre también que está unido a ellos por un secreto monstruoso.', video: 'https://www.youtube.com/embed/11JNi1gUOiU' },
+                /* CORREGIR DESDE ACA */
+                12: { imagen: '../../img/proximos-extrenos/horrorLand(12).jpg', titulo: 'Horror Park', descripcion: 'Un asesino en serie enmascarado convierte un parque de atracciones en su patio de recreo aterrorizando a un grupo de amigos. Mientras tanto, unos patrocinadores que están en el parque se divierten pensando que todo es parte del espectáculo.', video: 'https://www.youtube.com/embed/81fhq49i_TA' },
+
+                13: { imagen: '../../img/proximos-extrenos/increible(13).jpg', titulo: 'Increible pero cierto', descripcion: 'Alain y Marie es un matrimonio que se ha mudado a la casa suburbana de sus sueños. Pero su nuevo hogar tiene un incoveniente. El agente inmobiliario ya les advirtió de aquello que se encontraba en el sótano podría cambiarles la vida.', video: 'https://www.youtube.com/embed/wq0hN2mA5gk' },
+
+                14: { imagen: '../../img/proximos-extrenos/inmaculda(14).jpeg', titulo: 'Inmaculada', descripcion: 'Cecilia, una mujer de fe devota, recibe una calurosa bienvenida en la perfecta campiña italiana, donde se le ofrece un nuevo papel en un ilustre convento. Pero se vuelve más claro para Cecilia que su nuevo hogar alberga oscuros y horribles secretos.', video: 'https://www.youtube.com/embed/9JMM0fFv6iI' },
+
+                15: { imagen: '../../img/proximos-extrenos/jungle(15).jpeg', titulo: 'Jungle Bunch: World Tour', descripcion: 'Nuestros héroes, a los que se unirán nuevos aliados, viajarán por todo el mundo en busca de un antídoto. Desde las lejanas regiones del Norte, hasta Europa, Asia y Oriente Medio, se embarcarán en la mayor búsqueda de su historia. Esta vez, se enfrentan a un adversario más inteligente y diabólico que nunca.', video: 'https://www.youtube.com/embed/i1TqlmkRXOs' },
+
+                16: { imagen: '../../img/proximos-extrenos/laPlaga(16).jpeg', titulo: 'Vermin: La Plaga', descripcion: 'Filme de terror que plantea una grave crisis tras la invasión de unas arañas que van multiplicándose hasta el punto de abocar a la población a una cuarentena permanente. Kaleb, que está a punto de cumplir 30 años, nunca ha estado más solo.', video: 'https://www.youtube.com/embed/s86Uwep1RYc' },
+
+                17: { imagen: '../../img/proximos-extrenos/losextraños(17.jpg', titulo: 'Los Extraños: Capitulo 1', descripcion: 'Durante una parada en un viaje por carretera, en una remota casa de alquiler en el bosque, una joven pareja se convierte en la presa de una misteriosa banda de tres extraños enmascarados que atacan sin previo aviso ni motivo.', video: 'https://www.youtube.com/embed/79u0_4SB35A' },
+
+                // Añadir más detalles...
+                18: { imagen: '../../img/proximos-extrenos/maestros(s)(18).jpg', titulo: 'Maestro(s)', descripcion: 'En la familia Dumar, el oficio de director de orquesta se transmite de padres a hijos: François termina una brillante carrera internacional, mientras que Denis acaba de ganar una enésima Victoria de la Música Clásica. Cuando François se entera de que ha sido elegido para dirigir la Scala, su gran y último sueño, no se lo puede creer.', video: 'https://www.youtube.com/embed/JuZfuHsuCZY' },
+
+                19: { imagen: '../../img/proximos-extrenos/mimi(19).jpg', titulo: 'Mimì es un adolescente huérfano nacido con pies deformes que trabaja en una pizzería de Nápoles. Un fatídico día, conoce a Carmilla, una joven que afirma ser la descendiente del mismísimo Conde Drácula. La conexión entre ellos es inmediata, y juntos deciden escapar del mundo cínico y violento en el que viven.', descripcion: 'asd', video: 'https://www.youtube.com/embed/RM35CfD7t2g' },
+
+                20: { imagen: '../../img/proximos-extrenos/monkey-man(20).jpeg', titulo: 'Monkey Man: El despertar de la bestia', descripcion: 'Kid es un delincuente que acaba de salir de prisión y vive en la India, intentando adaptarse a un mundo marcado por la avaricia y carente de valores espirituales. Allí luchará por buscar venganza por la muerte de su madre y defender a las clases más desfavorecidas.', video: 'https://www.youtube.com/embed/P_UKoXgv144' },
+
+                21: { imagen: '../../img/proximos-extrenos/por Venir(21).jpeg', titulo: 'Lo mejor está por venir. (Nanni Moretti)', descripcion: 'Giovanni (Nanni Moretti) un conocido cineasta italiano, se prepara para rodar su nueva película. Pero entre su pareja en crisis, su productor francés al borde de la quiebra y su hija que no le hace caso, ¡todo se ha puesto en su contra!', video: 'https://www.youtube.com/embed/KVo9J7ZczPs' },
+
+                22: { imagen: '../../img/proximos-extrenos/profesion_peligro(22).jpeg', titulo: 'Profesión Peligro', descripcion: 'Y ahora, tras un accidente que casi acaba con su carrera, este héroe de clase trabajadora debe seguir la pista de una estrella de cine desaparecida, resolver una conspiración y tratar de recuperar el amor de su vida mientras sigue haciendo su trabajo. ¿Qué podría salir bien?', video: 'https://www.youtube.com/embed/OKpxJt31ZVU' },
+
+                23: { imagen: '../../img/proximos-extrenos/red2(23).webp', titulo: 'Red: Crecer es bestial', descripcion: 'Mei Lee, una niña de 13 años un poco rara pero segura de sí misma, que se debate entre seguir siendo la hija obediente que su madre quiere que sea y el caos de la adolescencia.', video: 'https://www.youtube.com/embed/upGoAejd7LM' },
+
+                24: { imagen: '../../img/proximos-extrenos/simios(24).webp', titulo: 'Planeta de los simios: El nuevo reino', descripcion: 'Este filme cuenta la historia de un joven simio, Noa, que se embarca en un largo viaje para poder liberar a su aldea del tirano Próximus César. Pero el protagonista no estará solo en esta travesía. Lo acompañan el orangután Raka y una mujer Mae, interpretada por Freya Allan.', video: 'https://www.youtube.com/embed/hN2_6ehnTU4' },
+
+                25: { imagen: '../../img/proximos-extrenos/tarot(25).jpg', titulo: 'Tarot', descripcion: 'Cuando un grupo de amigos rompen la regla sagrada de la lectura del Tarot –nunca uses las cartas de otra persona– liberan sin saberlo el mal atrapado en una baraja maldita. Uno a uno se acaban enfrentando a su destino e iniciarán una carrera desesperada contra la muerte para escapar del futuro presagiado en las cartas.', video: 'https://www.youtube.com/embed/16TplZqkpSc' },
+
+                26: { imagen: '../../img/proximos-extrenos/transformer(26).jpeg', titulo: 'Transformers One', descripcion: 'Transformers One cuenta la historia jamás contada de cómo los personajes más icónicos del universo Transformers, Orion Pax y D-16, más conocidos como Optimus Prime y Megatron, pasaron de ser hermanos de armas a convertirse en enemigos acérrimos.', video: 'https://www.youtube.com/embed/sj8ANC-d-Y0' },
+
+                27  : { imagen: '../../img/proximos-extrenos/viajeSoñado(27).jpeg', titulo: 'El Viaje Soñado', descripcion: 'Blandine y Magalie fueron inseparables en su adolescencia, pero el tiempo y la distancia las separaron. Cuando sus caminos se cruzan de nuevo, deciden realizar juntas el viaje que siempre soñaron rumbo a Grecia, con su sol y sus islas.', video: 'https://www.youtube.com/embed/ucoLgPMwAOs' },
+
+                28  : { imagen: '../../img/proximos-extrenos/werther(28).jpeg', titulo: 'Werther: El Musical', descripcion: 'Werther (Kyuhyun) es un artista demasiado sensible y apasionado por su carrera, que vive tranquilamente en el pueblo de Wahlheim. Su vida cambia completamente, cuando conoce a Lotte (Jihye Lee), una hermosa dama que tiene a su cargo a sus hermanos, y que se encuentra comprometida con Albert (Sanghyun Lee).', video: 'https://www.youtube.com/embed/vmK0aoU0ukQ' },
+            };
+
+            const detalle = detalles[idPelicula];
+
+            if (detalle) {
+                document.getElementById('titulo').textContent = detalle.titulo;
+                document.getElementById('imagenA').src = detalle.imagen;
+                document.getElementById('descripcion').textContent = detalle.descripcion;
+                document.getElementById('video').src = detalle.video;
+            } else {
+                document.getElementById('descripcion').textContent = 'Película no encontrada.';
+            }
+        }
+
+        window.onload = cargarDetalle;
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="menuID">
+                <li class="logo"><a href="#">CineScape</a></li>
+                <li class="item"><a href="../../templates/proximos.html">Proximos estrenos</a></li>
+                <li class="item"><a href="../../templates/recomendadas.html">Recomendadas</a></li>
+                <li class="item"><a href="../../templates/precios.html">Precios</a></li>
+                <li class="item"><a href="../../templates/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="divIMGVID">
+            <div id="divIMG">
+                    <img id="imagenA" class="imagen" src="" alt="Imagen de Película" width="320px" height="440px">
+            </div>
+            <div id="divPVID">
+                <div id="divTexto">
+                    <h2 id="titulo"></h2>
+                    <p id="descripcion"></p>
+                </div>
+                <div id="divVideo">
+                   <iframe id="video" width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <p>Derechos reservados @2024</p>
+            <div>
+                <img src="../../img/instagram (1).png" alt="Instagram">
+                <img src="../../img/facebook.png" alt="Facebook">
+            </div>
+        </div>
+    </footer> 
+</body>
+    
+</html>

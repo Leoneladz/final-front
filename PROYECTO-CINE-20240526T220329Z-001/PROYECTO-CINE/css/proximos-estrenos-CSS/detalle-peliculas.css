@@ -1,0 +1,551 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    /* border: 1px solid red; */
+}
+header {
+    height: 12vh;
+    background-color: cadetblue;
+    /* padding-top: 7%; */
+}
+
+.logo{
+    font-size: 2.5rem;
+    text-align: center;
+    justify-content: center;
+}
+
+#menuID {
+    padding: 0%;
+    margin: 0%;
+    list-style-type: none;
+}
+
+#menuID a {
+    text-decoration: none;
+    color: antiquewhite;
+    text-decoration: none;
+    /* margin-left: 7%; */
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.item {
+    padding: 10px;
+}
+
+.item a:hover::after {
+    color: #ccc;
+}
+
+body, main{
+    /* background-color: rgb(216, 205, 192); */
+    background-color: #2A2D38;
+    height: auto;
+}
+
+a{
+    color: antiquewhite;
+    text-decoration: none;
+    margin-left: 7%;
+    font-size: 1.2em;
+    text-align: center;
+   
+}
+
+.imagen{
+    margin-left: 90px;
+    margin-right: 20px;
+    margin-top: 50px;  
+}
+
+h2{
+    color: rgb(213, 222, 240);
+    margin-left: 2px;
+    margin-bottom: 2px;
+    font-size: 2rem;
+    margin-top: 50px;
+}
+
+p{
+    color: rgb(178, 189, 205);
+    margin-right: 20px;
+    font-size: 1.2em;
+     margin-left: 7px
+}
+
+
+footer{
+    height: 8vh;
+    /* margin-top: vh; */
+    background-color: cadetblue;
+    padding-top: 0%;
+}
+footer div {
+    display: block;
+    padding: 0.5vh;
+    text-align: center;
+    justify-content: center;
+}
+footer p{
+    text-align: center;
+    color: rgb(59, 57, 57);
+    font-size: 1em;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+h4{
+    text-align: center;
+    color: rgb(59, 57, 57);
+    font-size: 1em;
+    margin-left: 2%;
+    margin-right: 5%; 
+   
+}
+
+@media all and (max-width: 730px) {
+    header, footer{
+        height: auto;
+    }
+
+    footer div {
+        display: block;
+        justify-content: center;
+        text-align: center;
+        padding: 4px;
+    }
+    
+    footer div div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 30px;
+        width: auto;
+        
+    }
+    
+    footer div div img {
+        display: block;
+        padding: 2px;
+        height: 25px;
+        width: auto;
+    }
+
+    #menuID {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:center;
+        align-items:center;
+    }
+    
+    .item {
+        padding: 0px;
+    }
+    
+    #menuID a {
+        margin-left: 0px;
+    }
+    
+    #menuID li:first-child {
+        border-bottom: 1px solid #ffffff; /* Línea debajo de cada elemento */
+        padding: 0.5vh; /* Añadir algo de espacio para mejor visualización */
+    }
+    
+    #menuID li a {
+        display: block;
+        padding: 15px 5px;
+    }
+    
+    .toggle {
+        order: 1;
+        font-size: 20px;
+    }
+    
+    .item {
+        order: 1;
+        width: 100%;
+        text-align: center;
+        display:block;
+    }
+
+    a{
+        color: antiquewhite;
+        text-decoration: none;
+        margin-left: 2%;
+        font-size: 0.9em;
+        text-align: center;  
+    }
+
+    .imagen{
+        margin-left: 5px;
+        margin-right: 20px; 
+        width: 220px;
+        height: 310px;
+        padding-bottom: 5%; 
+    }
+
+    iframe{
+        width: 450px;
+        height: 250px;
+        padding-left: 0;
+    }
+
+    h2{
+        color: rgb(213, 222, 240);
+        margin-left: 20px;
+        margin-bottom: 2px;
+        font-size: 1.3rem;
+        margin-top: 10%;
+        
+    
+    }
+    
+    p{
+        color: rgb(178, 189, 205);
+        margin-right: 15px;
+        font-size: 1em;
+        margin-left: 15px;
+    }
+
+    h4{
+        text-align: center;
+        color: rgb(59, 57, 57);
+        font-size: 0.8em;
+        margin-left: 2%
+       
+    }
+
+    #divIMGVID{
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #divIMG {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #divPVID {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: auto;
+    }
+
+    #divPVID, p,  h2 {
+        margin: 0%;
+        padding: 5px;
+        text-align: justify;
+        font-size: 1.2rem;
+    }
+
+    #divVideo {
+        display: flex;
+        height: auto;
+        width: auto;
+        justify-content: center;
+        align-items: center;
+        /* padding: 10px; */
+        padding-bottom: 20px;
+    }
+}
+
+@media all and (min-width: 730px) {
+    header, footer{
+        height: auto;
+    }
+
+    footer div {
+        display: block;
+        justify-content: center;
+        text-align: center;
+        padding: 4px;
+    }
+
+    footer div div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 30px;
+        width: auto;
+        
+    }
+
+    footer div div img {
+        display: block;
+        padding: 2px;
+        height: 25px;
+        width: auto;
+    }
+
+    #menuID {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:center;
+        align-items:center;
+    }
+
+    #menuID a {
+        margin-left: 0px;
+    }
+
+    #menuID li:first-child {
+        border-bottom: 1px solid #ffffff; /* Línea debajo de cada elemento */
+        padding: 0.5vh; /* Añadir algo de espacio para mejor visualización */
+    }
+
+    #menuID li a {
+        display: block;
+        padding: 15px 5px;
+    }
+
+    .toggle {
+        order: 1;
+        font-size: 20px;
+    }
+
+    .item {
+        order: 1;
+        width: 100%;
+        text-align: center;
+        display:block;
+        padding: 0px;
+    }
+
+    a{
+        color: antiquewhite;
+        text-decoration: none;
+        margin-left: 2%;
+        font-size: 0.9em;
+        text-align: center;  
+    }
+
+    .imagen{
+        color: rgb(213, 222, 240);
+        margin-left: 2px;
+        margin-bottom: 2px;
+        /* font-size: 2rem; */
+        margin-top: 50px;
+        height: auto;
+        /* width: auto; */
+    }
+
+    iframe{
+        width: 450px;
+        height: 250px;
+        padding-left: 0;
+    }
+
+    h2{
+        color: rgb(213, 222, 240);
+        margin-left: 2px;
+        margin-bottom: 2px;
+        font-size: 2rem;
+        margin-top: 50px;
+    }
+    
+    p{
+        color: rgb(178, 189, 205);
+        margin-right: 20px;
+        font-size: 1.2em;
+        margin-left: 7px
+    }
+
+    h4{
+        text-align: center;
+        color: rgb(59, 57, 57);
+        font-size: 1em;
+        margin-left: 2%;
+        margin-right: 5%; 
+    }
+
+    
+    #divIMGVID{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        /* border: 3px solid rgb(95, 87, 87); */
+        padding: 5px;
+        border-spacing: 10px;
+    }
+
+    #divIMG {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #divPVID {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: auto;
+    }
+
+    #divPVID, p,  h2 {
+        margin: 0%;
+        padding: 5px;
+        text-align: justify;
+        font-size: 1.2rem;
+    }
+
+    #divVideo {
+        display: flex;
+        height: auto;
+        width: auto;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+}
+
+/* DESKTOP MENU */
+@media all and (min-width: 960px) {    
+    #menuID {
+        height: auto;
+        align-items: center;     
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content:center;
+        background: none;
+    }
+
+    #menuID li:first-child {
+        border-bottom: none;
+        padding: 0.5vh;
+    }
+
+    .item {
+        position: relative;
+        display: block; 
+        width: auto;
+        padding: 0vh 5vh;
+    }
+
+    a{
+        color: antiquewhite;
+        text-decoration: none;
+        margin-left: 2%;
+        font-size: 0.9em;
+        text-align: center;  
+    }
+
+    .imagen{
+        color: rgb(213, 222, 240);
+     margin-left: 2px;
+     margin-bottom: 2px;
+     font-size: 2rem;
+     margin-top: 50px;
+     }
+ 
+     iframe{
+         width: 450px;
+         height: 250px;
+         padding-left: 0;
+     }
+ 
+     h2{
+         color: rgb(213, 222, 240);
+         margin-left: 2px;
+         margin-bottom: 2px;
+         font-size: 2rem;
+         margin-top: 50px;
+     }
+     
+     p{
+         color: rgb(178, 189, 205);
+         margin-right: 20px;
+         font-size: 1.2em;
+         margin-left: 7px
+     }
+ 
+     h4{
+         text-align: center;
+         color: rgb(59, 57, 57);
+         font-size: 1em;
+         margin-left: 2%;
+         margin-right: 5%; 
+     }
+
+    #divIMGVID {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 1fr;
+        width: 1fr;
+    }
+
+    #divIMG {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin: 40px;
+    }
+
+    #divIMG img {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+    }
+
+    #divPVID {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    #divTexto p, h2{
+        padding: 10px;
+        margin: 0px;
+    }
+
+    #divVideo iframe {
+        width: 560px;
+        height: 315px;
+    }
+
+    footer {
+        height: auto;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    }
+
+    footer div {
+        display: block;
+        justify-content: center;
+        text-align: center;
+        padding: 2px;
+    }
+
+    footer div p {
+        /* padding: 0px; */
+        margin-bottom: 3px;
+    }
+
+    footer div div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    footer div div img {
+        display: block;
+        padding: 2px;
+        height: 25px;
+        width: auto;
+    }
+}
